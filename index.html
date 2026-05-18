@@ -1,1 +1,1281 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags - Google Search ke liye -->
+  <title>Shree Omkar Wholesale Bazar | श्री ओमकार होलसेल बाजार - कपड़े की दुकान</title>
+  <meta name="description" content="श्री ओमकार होलसेल बाजार - सभी प्रकार के कपड़े थोक और खुदरा दामों में। साड़ी, सूट, कुर्ता, जींस, शर्ट, बच्चों के कपड़े और बहुत कुछ। Shree Omkar Wholesale Bazar best clothing shop." />
+  <meta name="keywords" content="Shree Omkar Wholesale Bazar, श्री ओमकार होलसेल बाजार, kapde ki dukan, wholesale kapde, saree, suit, kurta, cloth shop, wholesale bazar, कपड़े होलसेल, थोक कपड़े" />
+  <meta name="author" content="Shree Omkar Wholesale Bazar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (Social Media) -->
+  <meta property="og:title" content="Shree Omkar Wholesale Bazar - सभी कपड़े एक जगह" />
+  <meta property="og:description" content="होलसेल रेट में सभी प्रकार के कपड़े - साड़ी, सूट, कुर्ता, जींस, बच्चों के कपड़े और बहुत कुछ।" />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Shree Omkar Wholesale Bazar",
+    "alternateName": "श्री ओमकार होलसेल बाजार",
+    "description": "सभी प्रकार के कपड़े थोक और खुदरा दामों में उपलब्ध।",
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, UPI",
+    "openingHours": "Mo-Su 09:00-21:00"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --saffron: #FF6B00;
+      --deep-red: #B5002A;
+      --gold: #D4A017;
+      --cream: #FFF8EF;
+      --dark: #1A0A00;
+      --maroon: #7B0023;
+      --light-gold: #FAE8A0;
+      --green: #1A7A4A;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    /* ===== DECORATIVE PATTERN BG ===== */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(255,107,0,0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(181,0,42,0.06) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ===== TOPBAR ===== */
+    .topbar {
+      background: var(--deep-red);
+      color: #fff;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 0.82rem;
+      letter-spacing: 0.5px;
+    }
+
+    .topbar span { margin: 0 12px; }
+
+    /* ===== NAV ===== */
+    nav {
+      background: var(--dark);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.3rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .nav-logo small {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.6rem;
+      color: var(--saffron);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 400;
+      transition: color 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--saffron);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-weight: 600 !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 25px; height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1A0A00 0%, #3D1200 40%, #7B0023 100%);
+    }
+
+    .hero-mandala {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      opacity: 0.07;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotateSlow 40s linear infinite;
+    }
+
+    .hero-mandala::before {
+      content: '';
+      position: absolute;
+      inset: 20px;
+      border: 1px dashed var(--gold);
+      border-radius: 50%;
+      animation: rotateSlow 20s linear infinite reverse;
+    }
+
+    .hero-mandala::after {
+      content: '';
+      position: absolute;
+      inset: 60px;
+      border: 2px solid var(--saffron);
+      border-radius: 50%;
+    }
+
+    @keyframes rotateSlow {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 40px 20px;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-om {
+      font-size: 3rem;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 8px;
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 6vw, 5rem);
+      color: #fff;
+      font-weight: 900;
+      line-height: 1.1;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .hero-title span {
+      color: var(--gold);
+      display: block;
+    }
+
+    .hero-hindi {
+      font-family: 'Tiro Devanagari Hindi', serif;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      color: var(--light-gold);
+      margin-top: 8px;
+      display: block;
+    }
+
+    .hero-tagline {
+      margin-top: 20px;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(212,160,23,0.4);
+      color: var(--light-gold);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+
+    .badge:hover {
+      background: var(--gold);
+      color: var(--dark);
+      border-color: var(--gold);
+    }
+
+    .hero-btn {
+      display: inline-block;
+      margin-top: 36px;
+      background: linear-gradient(135deg, var(--saffron), var(--deep-red));
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 44px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 8px 30px rgba(255,107,0,0.4);
+      transition: all 0.3s;
+    }
+
+    .hero-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(255,107,0,0.6);
+    }
+
+    /* ===== SECTION COMMON ===== */
+    section {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .section-label {
+      display: inline-block;
+      background: var(--saffron);
+      color: #fff;
+      font-size: 0.72rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 2px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: var(--dark);
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .section-title-hindi {
+      font-family: 'Tiro Devanagari Hindi', serif;
+      color: var(--deep-red);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      margin-top: 6px;
+      display: block;
+    }
+
+    /* ===== CATEGORY GRID ===== */
+    .categories {
+      background: var(--cream);
+      padding-bottom: 60px;
+    }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .cat-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      transition: all 0.35s;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .cat-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+      border-color: var(--gold);
+    }
+
+    .cat-icon-box {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cat-card:nth-child(1) .cat-icon-box { background: linear-gradient(135deg, #FFE0EC, #FFADC8); }
+    .cat-card:nth-child(2) .cat-icon-box { background: linear-gradient(135deg, #FFF0D0, #FFCF7A); }
+    .cat-card:nth-child(3) .cat-icon-box { background: linear-gradient(135deg, #D0F0FF, #87CEFA); }
+    .cat-card:nth-child(4) .cat-icon-box { background: linear-gradient(135deg, #D0FFE8, #78D8A4); }
+    .cat-card:nth-child(5) .cat-icon-box { background: linear-gradient(135deg, #F0D0FF, #C87AFA); }
+    .cat-card:nth-child(6) .cat-icon-box { background: linear-gradient(135deg, #FFE8D0, #FAA87A); }
+    .cat-card:nth-child(7) .cat-icon-box { background: linear-gradient(135deg, #D8D0FF, #A08EF0); }
+    .cat-card:nth-child(8) .cat-icon-box { background: linear-gradient(135deg, #D0FFF8, #7ADAD0); }
+    .cat-card:nth-child(9) .cat-icon-box { background: linear-gradient(135deg, #FFEED0, #FAC27A); }
+    .cat-card:nth-child(10) .cat-icon-box { background: linear-gradient(135deg, #FFD8D8, #FA8E8E); }
+
+    .cat-info {
+      padding: 14px 16px;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .cat-name {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--dark);
+    }
+
+    .cat-name-hindi {
+      font-family: 'Tiro Devanagari Hindi', serif;
+      font-size: 0.85rem;
+      color: var(--deep-red);
+      margin-top: 2px;
+    }
+
+    /* ===== WHY US ===== */
+    .why-us {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--maroon) 100%);
+      padding: 70px 24px;
+      text-align: center;
+    }
+
+    .why-us .section-title { color: #fff; }
+    .why-us .section-title-hindi { color: var(--light-gold); }
+    .why-us .section-label { background: var(--gold); color: var(--dark); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 40px auto 0;
+    }
+
+    .feature-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 30px 20px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+
+    .feature-card:hover {
+      background: rgba(255,255,255,0.13);
+      transform: translateY(-5px);
+    }
+
+    .feature-icon { font-size: 2.5rem; margin-bottom: 14px; }
+
+    .feature-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .feature-desc {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.6;
+    }
+
+    /* ===== OFFERS BANNER ===== */
+    .offers {
+      background: linear-gradient(90deg, var(--saffron), var(--deep-red), var(--saffron));
+      background-size: 200% auto;
+      animation: shimmer 4s linear infinite;
+      padding: 22px 24px;
+      text-align: center;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .offers-text {
+      color: #fff;
+      font-size: clamp(0.9rem, 2vw, 1.15rem);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .offers-text span {
+      background: #fff;
+      color: var(--deep-red);
+      padding: 2px 12px;
+      border-radius: 3px;
+      margin: 0 8px;
+    }
+
+    /* ===== GALLERY / PRODUCTS ===== */
+    .products {
+      padding: 0 0 70px;
+      background: #fff;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .product-card {
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--cream);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: all 0.35s;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    .product-img {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+    }
+
+    .p1 { background: linear-gradient(135deg, #FEE9F5, #FFC8E8); }
+    .p2 { background: linear-gradient(135deg, #FFF3DC, #FFD98A); }
+    .p3 { background: linear-gradient(135deg, #E8F5FF, #B8DCFF); }
+    .p4 { background: linear-gradient(135deg, #E8FFE8, #A8F0A8); }
+    .p5 { background: linear-gradient(135deg, #FFF0E8, #FFCC99); }
+    .p6 { background: linear-gradient(135deg, #F0E8FF, #D8A8FF); }
+
+    .product-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--deep-red);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .product-info { padding: 16px; }
+
+    .product-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+
+    .product-name-hindi {
+      font-family: 'Tiro Devanagari Hindi', serif;
+      font-size: 0.82rem;
+      color: var(--deep-red);
+      margin: 2px 0 8px;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .product-price small {
+      font-size: 0.78rem;
+      color: #999;
+      font-weight: 400;
+      margin-left: 4px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: var(--cream);
+      padding: 70px 24px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+
+    .contact-info-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+
+    .contact-info-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--dark);
+      margin-bottom: 24px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .contact-row-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--saffron), var(--deep-red));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .contact-row-text {
+      flex: 1;
+    }
+
+    .contact-row-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      font-weight: 600;
+    }
+
+    .contact-row-value {
+      font-size: 0.98rem;
+      color: var(--dark);
+      font-weight: 500;
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    .contact-form-box {
+      background: linear-gradient(135deg, var(--dark), var(--maroon));
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+
+    .contact-form-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .form-group { margin-bottom: 18px; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 7px;
+      letter-spacing: 0.5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: #fff;
+      font-size: 0.9rem;
+      font-family: 'Poppins', sans-serif;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.4);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--gold);
+    }
+
+    .form-group select option { background: var(--dark); }
+
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--saffron), var(--deep-red));
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(255,107,0,0.4);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(255,107,0,0.6);
+    }
+
+    /* ===== MAP PLACEHOLDER ===== */
+    .map-section {
+      background: #fff;
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    .map-placeholder {
+      max-width: 900px;
+      margin: 30px auto 0;
+      height: 300px;
+      background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      border: 2px dashed #ccc;
+      font-size: 3rem;
+    }
+
+    .map-placeholder p {
+      font-size: 1rem;
+      color: #888;
+      font-family: 'Tiro Devanagari Hindi', serif;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0D0500;
+      padding: 50px 24px 24px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+
+    .footer-logo-hindi {
+      font-family: 'Tiro Devanagari Hindi', serif;
+      color: var(--saffron);
+      font-size: 1.1rem;
+      margin-top: 4px;
+    }
+
+    .footer-tagline {
+      color: rgba(255,255,255,0.45);
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
+
+    .footer-divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 24px auto;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    .footer-copy {
+      color: rgba(255,255,255,0.25);
+      font-size: 0.75rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px;
+      margin-top: 10px;
+    }
+
+    .footer-copy a { color: var(--saffron); text-decoration: none; }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+      z-index: 9999;
+      text-decoration: none;
+      transition: all 0.3s;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1) translateY(-4px);
+      box-shadow: 0 10px 30px rgba(37,211,102,0.7);
+    }
+
+    /* ===== MOBILE NAV ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero-mandala { width: 350px; height: 350px; }
+    }
+
+    /* ===== SCROLL ANIMATIONS ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== SUCCESS MSG ===== */
+    .success-msg {
+      display: none;
+      background: var(--green);
+      color: #fff;
+      padding: 14px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 14px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  📍 आपका स्वागत है <span>|</span> 🕐 खुलने का समय: सुबह 9 बजे - रात 9 बजे <span>|</span> ☎️ अभी कॉल करें
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-logo">
+    Shree Omkar
+    <small>Wholesale Bazar</small>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">संपर्क करें</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-mandala"></div>
+  <div class="hero-content">
+    <span class="hero-om">ॐ</span>
+    <h1 class="hero-title">
+      Shree Omkar
+      <span>Wholesale Bazar</span>
+    </h1>
+    <span class="hero-hindi">श्री ओमकार होलसेल बाजार</span>
+    <p class="hero-tagline">
+      सभी प्रकार के कपड़े — साड़ी, सूट, कुर्ता, जींस, बच्चों के कपड़े और बहुत कुछ।<br />
+      थोक और खुदरा — दोनों में उपलब्ध।
+    </p>
+    <div class="hero-badges">
+      <span class="badge">🛍️ थोक दाम</span>
+      <span class="badge">✨ नई कलेक्शन</span>
+      <span class="badge">💰 बेस्ट प्राइस</span>
+      <span class="badge">🚚 होम डिलीवरी</span>
+    </div>
+    <a href="#categories" class="hero-btn">कपड़े देखें ↓</a>
+  </div>
+</section>
+
+<!-- OFFERS BANNER -->
+<div class="offers">
+  <p class="offers-text">
+    🎉 Grand Sale चल रहा है! <span>50% तक छूट</span> सभी कपड़ों पर — आज ही आएं! 🎉
+  </p>
+</div>
+
+<!-- CATEGORIES -->
+<section class="categories" id="categories">
+  <div class="section-header reveal">
+    <span class="section-label">Our Collection</span>
+    <h2 class="section-title">सभी कपड़े एक जगह</h2>
+    <span class="section-title-hindi">हमारी कैटेगरी</span>
+  </div>
+
+  <div class="cat-grid">
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">🥻</div>
+      <div class="cat-info">
+        <div class="cat-name">Sarees</div>
+        <div class="cat-name-hindi">साड़ियाँ</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">👗</div>
+      <div class="cat-info">
+        <div class="cat-name">Suits & Salwar</div>
+        <div class="cat-name-hindi">सूट-सलवार</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">👔</div>
+      <div class="cat-info">
+        <div class="cat-name">Shirts & Kurtas</div>
+        <div class="cat-name-hindi">शर्ट व कुर्ते</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">👖</div>
+      <div class="cat-info">
+        <div class="cat-name">Jeans & Pants</div>
+        <div class="cat-name-hindi">जींस व पैंट</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">👘</div>
+      <div class="cat-info">
+        <div class="cat-name">Lehenga</div>
+        <div class="cat-name-hindi">लहंगा</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">🧥</div>
+      <div class="cat-info">
+        <div class="cat-name">Winter Wear</div>
+        <div class="cat-name-hindi">सर्दियों के कपड़े</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">👶</div>
+      <div class="cat-info">
+        <div class="cat-name">Kids Wear</div>
+        <div class="cat-name-hindi">बच्चों के कपड़े</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">🩳</div>
+      <div class="cat-info">
+        <div class="cat-name">Casual Wear</div>
+        <div class="cat-name-hindi">कैजुअल वियर</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">🧣</div>
+      <div class="cat-info">
+        <div class="cat-name">Dupatta & Stole</div>
+        <div class="cat-name-hindi">दुपट्टा व स्टोल</div>
+      </div>
+    </div>
+    <div class="cat-card reveal">
+      <div class="cat-icon-box">🧵</div>
+      <div class="cat-info">
+        <div class="cat-name">Fabric / Thaan</div>
+        <div class="cat-name-hindi">कपड़े का थान</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <div class="section-header">
+    <span class="section-label">Why Choose Us</span>
+    <h2 class="section-title">हमें क्यों चुनें?</h2>
+    <span class="section-title-hindi" style="color:var(--light-gold)">हमारी खासियत</span>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">💰</div>
+      <div class="feature-title">होलसेल दाम</div>
+      <div class="feature-desc">थोक और खुदरा दोनों में बाजार से सबसे कम दाम में कपड़े।</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🏆</div>
+      <div class="feature-title">बेस्ट क्वालिटी</div>
+      <div class="feature-desc">हर कपड़ा अच्छी क्वालिटी का — चाहे कितने भी कम दाम में हो।</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🌈</div>
+      <div class="feature-title">विशाल कलेक्शन</div>
+      <div class="feature-desc">हजारों डिजाइन, रंग और पैटर्न — सभी ऑकेजन के लिए।</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🚚</div>
+      <div class="feature-title">होम डिलीवरी</div>
+      <div class="feature-desc">घर बैठे ऑर्डर करें और कपड़े आपके दरवाजे तक पहुंचाएं।</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🤝</div>
+      <div class="feature-title">विश्वसनीय दुकान</div>
+      <div class="feature-desc">वर्षों से ग्राहकों का भरोसा — ईमानदारी हमारी पहचान।</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎁</div>
+      <div class="feature-title">स्पेशल ऑफर</div>
+      <div class="feature-desc">त्योहारों पर और थोक खरीद पर विशेष छूट और ऑफर।</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="section-header reveal">
+    <span class="section-label">Featured Products</span>
+    <h2 class="section-title">नई कलेक्शन</h2>
+    <span class="section-title-hindi">लेटेस्ट प्रोडक्ट्स</span>
+  </div>
+  <div class="product-grid">
+    <div class="product-card reveal">
+      <div class="product-img p1">
+        <span class="product-tag">NEW</span>🥻
+      </div>
+      <div class="product-info">
+        <div class="product-name">Banarasi Silk Saree</div>
+        <div class="product-name-hindi">बनारसी सिल्क साड़ी</div>
+        <div class="product-price">₹899 <small>से शुरू</small></div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img p2">
+        <span class="product-tag">SALE</span>👗
+      </div>
+      <div class="product-info">
+        <div class="product-name">Party Wear Suit</div>
+        <div class="product-name-hindi">पार्टी वियर सूट</div>
+        <div class="product-price">₹599 <small>से शुरू</small></div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img p3">
+        <span class="product-tag">HOT</span>👘
+      </div>
+      <div class="product-info">
+        <div class="product-name">Bridal Lehenga</div>
+        <div class="product-name-hindi">ब्राइडल लहंगा</div>
+        <div class="product-price">₹2499 <small>से शुरू</small></div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img p4">
+        <span class="product-tag">NEW</span>👔
+      </div>
+      <div class="product-info">
+        <div class="product-name">Cotton Kurta Set</div>
+        <div class="product-name-hindi">कॉटन कुर्ता सेट</div>
+        <div class="product-price">₹349 <small>से शुरू</small></div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img p5">
+        <span class="product-tag">SALE</span>👶
+      </div>
+      <div class="product-info">
+        <div class="product-name">Kids Party Dress</div>
+        <div class="product-name-hindi">बच्चों की पार्टी ड्रेस</div>
+        <div class="product-price">₹249 <small>से शुरू</small></div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img p6">
+        <span class="product-tag">NEW</span>🧥
+      </div>
+      <div class="product-info">
+        <div class="product-name">Winter Jacket</div>
+        <div class="product-name-hindi">विंटर जैकेट</div>
+        <div class="product-price">₹699 <small>से शुरू</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-header reveal">
+    <span class="section-label">Contact Us</span>
+    <h2 class="section-title">हमसे संपर्क करें</h2>
+    <span class="section-title-hindi">पता व जानकारी</span>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info-box reveal">
+      <h3>📍 हमारी दुकान</h3>
+      <div class="contact-row">
+        <div class="contact-row-icon">📍</div>
+        <div class="contact-row-text">
+          <div class="contact-row-label">पता / Address</div>
+          <div class="contact-row-value">श्री ओमकार होलसेल बाजार<br/>आपका शहर, आपका राज्य</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-icon">📞</div>
+        <div class="contact-row-text">
+          <div class="contact-row-label">फोन / Phone</div>
+          <div class="contact-row-value">+91 XXXXX XXXXX</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-icon">⏰</div>
+        <div class="contact-row-text">
+          <div class="contact-row-label">समय / Timing</div>
+          <div class="contact-row-value">सोमवार–रविवार: सुबह 9 बजे – रात 9 बजे</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-icon">💳</div>
+        <div class="contact-row-text">
+          <div class="contact-row-label">Payment</div>
+          <div class="contact-row-value">Cash • UPI • GPay • PhonePe • Paytm</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-box reveal">
+      <h3>✉️ संदेश भेजें</h3>
+      <div class="form-group">
+        <label>आपका नाम / Your Name</label>
+        <input type="text" id="cName" placeholder="जैसे: Ramesh Kumar" />
+      </div>
+      <div class="form-group">
+        <label>मोबाइल नंबर / Mobile</label>
+        <input type="tel" id="cPhone" placeholder="+91 98765 43210" />
+      </div>
+      <div class="form-group">
+        <label>क्या चाहिए? / Category</label>
+        <select id="cCat">
+          <option value="">-- कैटेगरी चुनें --</option>
+          <option>साड़ी</option>
+          <option>सूट-सलवार</option>
+          <option>कुर्ता-शर्ट</option>
+          <option>जींस-पैंट</option>
+          <option>लहंगा</option>
+          <option>बच्चों के कपड़े</option>
+          <option>विंटर वियर</option>
+          <option>अन्य</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>संदेश / Message</label>
+        <textarea id="cMsg" placeholder="आपको क्या चाहिए लिखें..."></textarea>
+      </div>
+      <button class="submit-btn" onclick="submitForm()">📨 संदेश भेजें</button>
+      <div class="success-msg" id="successMsg">✅ आपका संदेश मिल गया! हम जल्द ही संपर्क करेंगे।</div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+  <div class="map-placeholder">
+    📍
+    <p>अपना Google Maps लिंक यहाँ लगाएं</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Shree Omkar Wholesale Bazar</div>
+  <div class="footer-logo-hindi">श्री ओमकार होलसेल बाजार</div>
+  <div class="footer-tagline">सभी कपड़े — थोक और खुदरा दामों में</div>
+  <div class="footer-divider"></div>
+  <ul class="footer-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="footer-copy">
+    © 2024 Shree Omkar Wholesale Bazar. All Rights Reserved.<br/>
+    <a href="#home">श्री ओमकार होलसेल बाजार</a>
+  </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a class="whatsapp-float" href="https://wa.me/91XXXXXXXXXX?text=नमस्ते! मुझे कपड़े चाहिए।" target="_blank" title="WhatsApp पर संपर्क करें">
+  💬
+</a>
+
+<script>
+  // Mobile Nav Toggle
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // Scroll Reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Contact Form
+  function submitForm() {
+    const name = document.getElementById('cName').value.trim();
+    const phone = document.getElementById('cPhone').value.trim();
+    if (!name || !phone) {
+      alert('कृपया नाम और मोबाइल नंबर भरें।');
+      return;
+    }
+    document.getElementById('successMsg').style.display = 'block';
+    document.getElementById('cName').value = '';
+    document.getElementById('cPhone').value = '';
+    document.getElementById('cCat').value = '';
+    document.getElementById('cMsg').value = '';
+    setTimeout(() => document.getElementById('successMsg').style.display = 'none', 5000);
+  }
+
+  // Smooth close nav on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+</script>
+</body>
+</html>
