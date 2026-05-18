@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -414,14 +413,6 @@
       margin-top: 2px;
     }
 
-    /* ===== OFFERS BANNER ===== */
-    .offers {
-      background: linear-gradient(90deg, var(--saffron), var(--deep-red), var(--saffron));
-      background-size: 200% auto;
-      animation: shimmer 4s linear infinite;
-      padding: 22px 24px;
-      text-align: center;
-    }
     /* ===== WHY US ===== */
     .why-us {
       background: linear-gradient(135deg, var(--dark) 0%, var(--maroon) 100%);
@@ -469,7 +460,16 @@
       color: rgba(255,255,255,0.7);
       line-height: 1.6;
     }
-    
+
+    /* ===== OFFERS BANNER ===== */
+    .offers {
+      background: linear-gradient(90deg, var(--saffron), var(--deep-red), var(--saffron));
+      background-size: 200% auto;
+      animation: shimmer 4s linear infinite;
+      padding: 22px 24px;
+      text-align: center;
+    }
+
     @keyframes shimmer {
       0% { background-position: 0% center; }
       100% { background-position: 200% center; }
@@ -933,6 +933,13 @@
   </div>
 </section>
 
+<!-- OFFERS BANNER -->
+<div class="offers">
+  <p class="offers-text">
+    🎉 श्री ओमकार होलसेल बाजार में आपका स्वागत है! <span>थोक व खुदरा</span> सभी कपड़े उपलब्ध — आज ही पधारें! 🎉
+  </p>
+</div>
+
 <!-- CATEGORIES -->
 <section class="categories" id="categories">
   <div class="section-header reveal">
@@ -1039,22 +1046,31 @@
       <div class="feature-desc">हजारों डिजाइन, रंग और पैटर्न — सभी ऑकेजन के लिए।</div>
     </div>
     <div class="feature-card reveal">
+      <div class="feature-icon">🚚</div>
+      <div class="feature-title">होम डिलीवरी</div>
+      <div class="feature-desc">घर बैठे ऑर्डर करें और कपड़े आपके दरवाजे तक पहुंचाएं।</div>
+    </div>
+    <div class="feature-card reveal">
       <div class="feature-icon">🤝</div>
       <div class="feature-title">विश्वसनीय दुकान</div>
       <div class="feature-desc">वर्षों से ग्राहकों का भरोसा — ईमानदारी हमारी पहचान।</div>
     </div>
-</div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎁</div>
+      <div class="feature-title">स्पेशल ऑफर</div>
+      <div class="feature-desc">त्योहारों पर और थोक खरीद पर विशेष छूट और ऑफर।</div>
+    </div>
+  </div>
 </section>
-    <!-- PRODUCTS -->
+
+<!-- PRODUCTS -->
 <section class="products" id="products">
   <div class="section-header reveal">
     <span class="section-label">Featured Products</span>
     <h2 class="section-title">नई कलेक्शन</h2>
     <span class="section-title-hindi">लेटेस्ट प्रोडक्ट्स</span>
   </div>
-
   <div class="product-grid">
-
     <div class="product-card reveal">
       <div class="product-img p1">
         <span class="product-tag">NEW</span>🥻
@@ -1064,7 +1080,6 @@
         <div class="product-name-hindi">बनारसी सिल्क साड़ी</div>
       </div>
     </div>
-
     <div class="product-card reveal">
       <div class="product-img p2">
         <span class="product-tag">SALE</span>👗
@@ -1074,7 +1089,6 @@
         <div class="product-name-hindi">पार्टी वियर सूट</div>
       </div>
     </div>
-
     <div class="product-card reveal">
       <div class="product-img p3">
         <span class="product-tag">HOT</span>👘
@@ -1084,7 +1098,6 @@
         <div class="product-name-hindi">ब्राइडल लहंगा</div>
       </div>
     </div>
-
     <div class="product-card reveal">
       <div class="product-img p4">
         <span class="product-tag">NEW</span>👔
@@ -1094,7 +1107,6 @@
         <div class="product-name-hindi">कॉटन कुर्ता सेट</div>
       </div>
     </div>
-
     <div class="product-card reveal">
       <div class="product-img p5">
         <span class="product-tag">SALE</span>👶
@@ -1104,7 +1116,6 @@
         <div class="product-name-hindi">बच्चों की पार्टी ड्रेस</div>
       </div>
     </div>
-
     <div class="product-card reveal">
       <div class="product-img p6">
         <span class="product-tag">NEW</span>🧥
@@ -1114,7 +1125,6 @@
         <div class="product-name-hindi">विंटर जैकेट</div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -1146,7 +1156,7 @@
         <div class="contact-row-icon">⏰</div>
         <div class="contact-row-text">
           <div class="contact-row-label">समय / Timing</div>
-          <div class="contact-row-value">सोमवार–रविवार: सुबह 10 बजे – रात 9 बजे</div>
+          <div class="contact-row-value">सोमवार–रविवार: सुबह 9 बजे – रात 9 बजे</div>
         </div>
       </div>
       <div class="contact-row">
